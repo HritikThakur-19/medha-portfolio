@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medha CMS | Admin Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="admin-header">
+
+        <h1>📝 Medha CMS</h1>
+
+        <button id="logoutBtn">Logout</button>
+
+    </div>
+
+    <!-- Statistics -->
+    <div class="dashboard-stats">
+
+        <div class="stat-card">
+
+            <h2 id="blog-count">0</h2>
+
+            <p>Total Blogs</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="message-count">0</h2>
+
+            <p>Contact Messages</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Blog Form -->
+    <h2>Create / Edit Blog</h2>
+
+    <form id="blogForm">
+
+        <input
+            type="hidden"
+            id="blogId">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Blog Title"
+            required>
+
+        <input
+            type="text"
+            id="author"
+            placeholder="Author"
+            required>
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Category"
+            required>
+
+        <input
+            type="file"
+            id="image"
+            name="image">
+
+        <!-- Quill Editor -->
+        <div id="editor" style="height:300px;"></div>
+
+        <input
+            type="hidden"
+            id="content">
+
+        <br><br>
+
+        <button
+            type="submit"
+            class="publish-btn">
+
+            Publish Blog
+
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- Blogs -->
+    <h2>All Blogs</h2>
+
+    <table id="blogTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Image</th>
+
+                <th>Title</th>
+
+                <th>Category</th>
+
+                <th>Author</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="admin-blog-list">
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <!-- Messages -->
+    <h2>Contact Messages</h2>
+
+    <table id="messageTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Message</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="message-list">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

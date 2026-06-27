@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Finding Beauty in Everyday Moments",
+    "category": "Life",
+    "readTime": "5 min",
+    "author": "Medha Kaushal"
+  },
+  {
+    "id": 2,
+    "title": "Books That Changed My Thinking",
+    "category": "Books",
+    "readTime": "7 min",
+    "author": "Medha Kaushal"
+  }
+]
