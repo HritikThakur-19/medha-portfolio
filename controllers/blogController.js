@@ -53,17 +53,17 @@ const addBlog = async (req, res) => {
 
         const blog = new Blog({
 
-    title:req.body.title,
+            title: req.body.title,
 
-    author:req.body.author,
+            author: req.body.author,
 
-    category:req.body.category,
+            category: req.body.category,
 
-    content:req.body.content,
+            content: req.body.content,
 
-    image:req.file ? req.file.filename : ""
+            image: req.file ? req.file.path : ""
 
-});
+        });
 
         await blog.save();
 

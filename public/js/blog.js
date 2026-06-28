@@ -7,7 +7,7 @@ fetch(`/api/blogs/${id}`)
 .then(blog => {
 
     // Cover Image
-    document.getElementById("blog-image").src = `/uploads/${blog.image}`;
+    document.getElementById("blog-image").src = blog.image;
     document.getElementById("blog-image").alt = blog.title;
 
     // Title
@@ -63,7 +63,7 @@ fetch(`/api/blogs/${id}`)
             <div class="blog-card">
 
                 <img
-                    src="/uploads/${item.image}"
+                    src="${item.image}"
                     class="blog-image"
                     alt="${item.title}">
 

@@ -138,7 +138,7 @@ async function loadAdminBlogs() {
             <td>
 
                 <img
-                    src="/uploads/${blog.image}"
+                    src="${blog.image}"
                     class="admin-image">
 
             </td>
