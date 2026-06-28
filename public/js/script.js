@@ -220,7 +220,7 @@ function displayBlogs(blogs){
         <div class="blog-card">
 
             <img
-                src="/uploads/${blog.image}"
+                src="${blog.image}"
                 alt="${blog.title}"
                 class="blog-image">
 
