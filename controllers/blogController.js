@@ -50,6 +50,7 @@ const createBlog = async (req, res) => {
 const addBlog = async (req, res) => {
 
     try {
+        console.log(req.file);
 
         const blog = new Blog({
 
